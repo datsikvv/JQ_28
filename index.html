@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Effects show</title>  
+    <style>
+        
+    </style>
+ 
+</head>
+<body>
+    <button>Start</button>
+    <p></p>
+    <ul class="list">    
+    </ul>
+
+
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>   
+    <script>
+    'use strict'
+    const id = 'motorola-xoom-with-wi-fi';
+
+    const post = {
+        name: "Hello world",
+        snippet: "some text"
+    }
+
+    $.ajax({
+        method: "delete",
+        url: `http://localhost:3030/data/QE_IcNv`,
+        data: JSON.stringify(post),
+            success: (data) => {
+                console.log('success ' + data); 
+            },
+            error:  (err) => {
+                console.log('error ' + err)
+            },
+
+            complete: (data) => {
+                console.log('complete ' + data);  
+            },
+
+            cache: false,
+
+            headers: {
+                'Authrization': 'Basic xxxxxxxxxxx',
+                'X-CSFR-TOKEN': 'xxxxxxxxxxxxxxxxx',
+                'Content-Type': 'dddddddddddddd'
+            }
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    $.ajax({
+        method: "put",
+        url: `http://localhost:3030/data/QE_IcNv`,
+        data: JSON.stringify(post),
+            success: (data) => {
+                console.log('success ' + data); 
+            },
+            error:  (err) => {
+                console.log('error ' + err)
+            },
+
+            complete: (data) => {
+                console.log('complete ' + data);  
+            },
+
+            cache: false,
+
+            headers: {
+                'Authrization': 'Basic xxxxxxxxxxx',
+                'X-CSFR-TOKEN': 'xxxxxxxxxxxxxxxxx',
+                'Content-Type': 'dddddddddddddd'
+            }
+
+
+
+        });
+*/
+
+
+
+/*
+    $.ajax({
+        method: "post",
+        url: `http://localhost:3030/data/`,
+        data: JSON.stringify(post),
+            success: (data) => {
+                console.log('success ' + data); 
+            },
+            error:  (err) => {
+                console.log('error ' + err)
+            },
+
+            complete: (data) => {
+                console.log('complete ' + data);  
+            },
+
+            cache: false,
+
+            headers: {
+                'Authrization': 'Basic xxxxxxxxxxx',
+                'X-CSFR-TOKEN': 'xxxxxxxxxxxxxxxxx',
+                'Content-Type': 'dddddddddddddd'
+            }
+
+
+
+        });
+
+*/
+
+
+/*
+        $.ajax({
+            method: "get",
+            url: `http://localhost:3030/data/`,
+            success: (data) => {
+                // console.log(data);
+                // $("p").text(data[0].name);
+
+                const titleList = $(".list");
+
+                // for(let obj of data) {
+
+                //     if  (obj.name) {
+                //         titleList.append($("<li></li>").text(obj.name))
+                //         console.log(obj.name);
+                //     }
+                // }
+                if  (data.name) {
+                        titleList.append($("<li></li>").text(data.name))
+                        console.log(data.name);
+                    }
+
+
+            },
+            error:  (err) => {
+                console.log('error ' + err)
+            },
+
+            complete: (data) => {
+                console.log('complete ' + data);  
+            },
+
+            cache: false,
+
+            headers: {
+                'Authrization': 'Basic xxxxxxxxxxx',
+                'X-CSFR-TOKEN': 'xxxxxxxxxxxxxxxxx',
+                'Content-Type': 'dddddddddddddd'
+            }
+
+
+
+        }).done(function(data) {
+            console.log('done ' + data); 
+        }).fail(function(err) {
+            console.log('fail ' + err)
+        }).allways(function(complete) {
+            console.log('complete ' + complete)
+        })
+
+*/
+
+
+    </script>
+
+</body>
+</html>
+
